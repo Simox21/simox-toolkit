@@ -1,0 +1,12 @@
+{
+  "name": "simox-tools",
+  "description": "Simox21's Claude Code plugins",
+  "owner": { "name": "Simox21" },
+  "plugins": [
+    {
+      "name": "simox-toolkit",
+      "source": "./plugins/simox-toolkit",
+      "description": "Agents, skills and tool suggestions for everyday projects"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "simox-toolkit",
+  "displayName": "Simox Toolkit",
+  "description": "Review, planning, security and build-fix agents, coding and crypto skills, and a hint list so Claude suggests them when they fit",
+  "author": { "name": "Simox21" },
+  "repository": "https://github.com/Simox21/simox-toolkit",
+  "license": "MIT"
+}
