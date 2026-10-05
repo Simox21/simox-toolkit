@@ -18,21 +18,13 @@ In Claude Code:
 
 Updates: `/plugin marketplace update simox-tools`, or turn on auto-update under Marketplaces in `/plugin`.
 
-## Use in a repository (cloud sessions too)
+## Cloud sessions (claude.ai/code)
 
-Commit this to the repository's `.claude/settings.json`:
-
-```json
-{
-  "extraKnownMarketplaces": {
-    "simox-tools": {
-      "source": { "source": "github", "repo": "Simox21/simox-toolkit" }
-    }
-  },
-  "enabledPlugins": {
-    "simox-toolkit@simox-tools": true
-  }
-}
-```
+Cloud sessions do not install plugins, neither from your computer nor from a repository's
+`.claude/settings.json`. They do load `.claude/agents/`, `.claude/skills/` and `CLAUDE.md`
+committed in the repository. For a repo you work on in the cloud, copy
+`plugins/simox-toolkit/agents` and `skills` into its `.claude/` and paste the table from
+`ADVISOR.md` into its `CLAUDE.md` (drop the `simox-toolkit:` prefixes). Skills enabled on
+your claude.ai account also load in cloud sessions.
 
 Third-party notice: `plugins/simox-toolkit/NOTICE.md`.
